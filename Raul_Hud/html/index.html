@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hud</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- import cdn jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="AllHud">
+        <div class = 'cuentas'>
+            <div class = 'container-cuentas'>
+                <i class="fas fa-credit-card icon" style = "color: rgb(0, 164, 240); font-size: .75vw;"></i>
+                <span class = 'numbers bankjs' id = 'bank'>0</span>
+            </div>
+            <div class = 'container-cuentas'>
+                <i class="fas fa-money-bill-wave icon" style = "color: rgb(0, 240, 108); font-size: .75vw;"></i>
+                <span class = 'numbers moneyjs' id = 'cash'>0</span>
+            </div>
+            <div class = 'container-cuentas'>
+              <i class="fas fa-user-secret icon" style = "color: rgb(255, 0, 0); font-size: .75vw;"></i>
+              <span class = 'numbers blackjs' id  = 'black'>0</span>
+            </div>
+           <!-- <div class = 'container-cuentas'> -->
+           <!--   <i class="fas fa-coin icon" style = "color: rgba(0, 56, 198, 0.708); font-size: .75vw;"></i> -->
+          <!--    <span class = 'numbers coinjs' id  = 'black'>0</span> -->
+          <!--  </div> -->
+        </div>
+        <div class = 'caja'>
+            <i class="fas fa-briefcase icon" style = "color: rgba(17, 0, 116, 0.637); font-size: 1vw;"></i>
+            <span class = 'text trabajojs' id = 'job'>Cargando......</span>
+        </div>
+        <div class="right-data">
+            <img src="https://cdn.discordapp.com/attachments/1163258799172354150/1207787642511429712/6b4a1e135848463.61ef24b790d19-removebg-preview.png?ex=65e0eae5&is=65ce75e5&hm=71a0b68eb2b31b9e017809dfb602af65a16b126c3ecf05263336a23a39a470e9&" alt="">
+            <div class="playerid">
+              <i class="fas fa-id-card-alt"></i>
+              <span class="pid">ID 1230</span>
+            </div>
+        </div>
+        <div class="status">
+            <div class="square">
+              <div class="progressvida"></div>
+              <i class="fas fa-heartbeat"></i>
+            </div>
+            <div class="square">
+              <div class="progresschaleco"></div>
+              <i class="fad fa-shield-alt"></i>
+            </div>
+            <div class="square">
+              <div class="progresscomida"></div>
+              <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="square">
+              <div class="progressagua"></div>
+              <i class="fas fa-glass"></i>
+            </div>
+        </div>
+        <div class="armas">
+            <span>66 / 30</span> <img src="https://cdn.discordapp.com/attachments/970000746886090772/1128069076346994758/bullet.png">
+        </div>
+    </div>
+    <div class="ConfigHud" style="display: none;">
+        <h1>Configurar el Color</h1>
+        <div class="ContainerConfig">
+            <div class="FirstIcon">
+                <i class="fas fa-heartbeat"><span> Color</span></i> 
+            </div>
+            <div class="FirstIcon">
+                <input class="colorVida" type="color" value="#00618b" name="" id="styleInput">
+            </div>
+        </div>
+        <div class="ContainerConfig">
+            <div class="FirstIcon">
+                <i class="far fa-shield"><span> Color</span></i>
+            </div>
+            <div class="FirstIcon">
+                <input class="colorChaleco" type="color" value="#00618b" name="" id="styleInput">
+            </div>
+        </div>
+        <div class="ContainerConfig">
+            <div class="FirstIcon">
+                <i class="fas fa-hamburger"><span> Color</span></i>
+            </div>
+            <div class="FirstIcon">
+                <input class="colorComida" type="color" value="#00618b" name="" id="styleInput">
+            </div>
+        </div>
+        <div class="ContainerConfig">
+            <div class="FirstIcon">
+                <i class="fas fa-glass"><span> Color</span></i>
+            </div>
+            <div class="FirstIcon">
+                <input class="colorAgua" type="color" value="#00618b" name="" id="styleInput">
+            </div>
+        </div>
+        <div class="ContainerConfig">
+            <div class="FirstIcon">
+                <i class="far fa-palette"><span> Background</span></i>
+            </div>
+            <div class="FirstIcon">
+                <input class="colorBackground" type="color" name="" id="styleInput">
+            </div>
+        </div>
+        <br>
+        <div class="ContainerConfig" style="margin: 1vw;">
+            <div class="FirstIcon">
+                <button id="saveColors" class="button-31"><i class="far fa-save"></i> Guardar</button>
+            </div>
+            <div class="FirstIcon">
+                <button id="resetColors" class="button-31"><i class="far fa-redo"></i> Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
